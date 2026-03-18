@@ -1,0 +1,27 @@
+.a-propos-main {
+    width: 50%;
+    margin: auto;
+}
+
+.a-propos-content {
+    border-right: 1px #8e86b5 solid;
+    border-bottom: 1px #8e86b5 solid;
+    padding: 50px;
+    margin-bottom: 80px;
+}
+
+
+.a-propos-content h2 {
+    margin: 30px;
+}
+
+.a-propos-content+div {
+    text-align: center;
+    /* agit sur la div qui se trouve directement après la classe (a-propos-content) */
+}
+
+@media screen and (max-width: 996px) {
+    .a-propos-main {
+        width: 100%;
+    }
+}

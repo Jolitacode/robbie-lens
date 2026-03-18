@@ -1,0 +1,155 @@
+.accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+}
+
+.accueil-introduction h1 {
+    margin-bottom: 20px;
+}
+
+.accueil-introduction a {
+    margin-top: 45px;
+}
+
+.container-intro {
+    padding-right: 80px;
+}
+
+.container-image {
+    position: relative;
+    padding-right: 0;
+}
+
+.union {
+    position: absolute;
+    width: 70px;
+    height: 69px;
+    border-right: 1px #8e86b5 solid;
+    border-bottom: 1px #8e86b5 solid;
+    right: -20px;
+    /* Un petit peu vers la droite pour qu'il dépasse le bord de la photo */
+    bottom: -20px;
+}
+
+.images-accueil {
+    background-color: white;
+    padding: 80px;
+}
+
+.images-accueil div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.images-accueil h2 {
+    color: #242424;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.section-contact h2 {
+    color: #A5B4FC;
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 525px;
+    color: white;
+    margin: auto;
+}
+
+.form-nom-email {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nom-email {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* un raccourci pour dire à un élément de prendre tou la place qui reste dans la boîte */
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    border-radius: 3px;
+    border: none;
+    padding: 15px;
+}
+
+
+input[type='submit'] {
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 996px) {
+    .accueil-introduction {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accueil-introduction img {
+        width: 285px;
+        height: 290px;
+    }
+
+    .container-intro {
+        padding-right: 0;
+        order: 2;
+        text-align: left;
+    }
+
+    .container-image {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .images-accueil {
+        padding: 40px;
+    }
+
+    .images-accueil h2 {
+        margin-bottom: 40px;
+    }
+
+
+    .images-accueil div {
+        flex-direction: column;
+    }
+
+    .images-accueil .cta {
+        display: none;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    .form-nom-email {
+        flex-direction: column;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+}

@@ -1,0 +1,73 @@
+.tarif-main {
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.titre-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* rearrange mon cta au centre */
+    padding-bottom: 40px;
+}
+
+.section-tarif {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.savoir-faire {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px #8e86b5 solid;
+    border-bottom: 1px #8e86b5 solid;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+h2,
+h3,
+h4 {
+    color: #A5B4FC;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 50px;
+}
+
+
+td,
+th {
+    border: 1px solid #8e86b5;
+    padding: 15px;
+}
+
+td {
+    padding: 60px;
+}
+
+@media screen and (max-width: 996px) {
+
+    .titre-cta .cta {
+        display: none;
+    }
+
+    .section-tarif {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-prix {
+        display: none;
+    }
+
+}

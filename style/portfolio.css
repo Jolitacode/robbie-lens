@@ -1,0 +1,71 @@
+.images-portfolio {
+    background-color: white;
+}
+
+.images-portfolio h2 {
+    color: #242424;
+    margin-bottom: 40px;
+}
+
+
+.grid-paysages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+
+}
+
+.grid-portraits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+}
+
+.grid-paysages img,
+.grid-portraits img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.link-container-images {
+    position: relative;
+}
+
+.link-container-images:hover .image-hover {
+    opacity: 1;
+}
+
+.image-hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* Pour que les propriétés attribué à cette classe, s'étirent et prennent bien toute la largeur et hauteur de la photo */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    /* le texte (voir la photo) n'est pas visible au départ. Peut aussi être remplacé par display: none; */
+    font-size: 1.5em;
+    transition: opacity 0.4s;
+    /* pour le temps d'apparition du voile noire au survol */
+}
+
+@media screen and (max-width: 996px) {
+
+    .grid-paysages,
+    .grid-portraits {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .link-container-images {
+        flex-wrap: wrap;
+    }
+}
